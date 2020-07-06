@@ -58,6 +58,7 @@ def logout_view(request):
 
 
 @login_required(login_url = 'login/')
-def home(request ,pk):
+def home(request):
+
 	return render(request ,"web_app/dashboard.html",{})
 
